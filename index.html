@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSafra - Dashboard Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h2>EcoSafra 🌾</h2>
+            <p>Agro forte, futuro sustentável</p>
+        </div>
+        <div class="status-geral">
+            <span>Índice de Equilíbrio:</span>
+            <strong id="score-equilibrio">92/100</strong>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <section class="cards-container">
+            <div class="card card-verde">
+                <h3>Umidade do Solo</h3>
+                <p class="valor" id="txt-umidade-solo">65%</p>
+                <span class="status">Ideal</span>
+            </div>
+            <div class="card card-azul">
+                <h3>Consumo de Água</h3>
+                <p class="valor" id="txt-consumo-agua">120L/m²</p>
+                <span class="status">Econômico</span>
+            </div>
+            <div class="card card-laranja" id="card-alerta">
+                <h3>Alerta de Pragas</h3>
+                <p class="valor" id="txt-alerta">Baixo Risco</p>
+                <span class="status" id="txt-status-alerta">Manejo Preventivo</span>
+            </div>
+        </section>
+
+        <section class="conteudo-principal">
+            <div class="grafico-box">
+                <h3>Histórico de Umidade vs. Irrigação Inteligente</h3>
+                <canvas id="meuGrafico"></canvas>
+            </div>
+
+            <div class="insights-box">
+                <h3>💡 Recomendações Ecológicas</h3>
+                <div id="recomendacao-texto">
+                    O solo apresenta ótimos níveis de umidade. A irrigação automática foi reduzida para preservar o lençol freático e economizar energia.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto Agrinho 2026 - Equilíbrio entre Produção e Meio Ambiente</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
